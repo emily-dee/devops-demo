@@ -19,4 +19,4 @@ jobs:
         run: docker build -t ${{ secrets.DOCKER_HUB_USERNAME }}/devops-demo .
 
       - name: Publish docker image to docker hub
-        run: docker push -t ${{ secrets.DOCKER_HUB_USERNAME }}/devops-demo:latest
+        run: docker push ${{ secrets.DOCKER_HUB_USERNAME }}/devops-demo:latest
